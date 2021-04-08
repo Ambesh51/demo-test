@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS BASIC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            * {
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+            }
+            
+                .top{
+                     display: flex;
+                     justify-content:space-around;
+                   padding-top: 5px;
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+                     height:50px;
+                     } 
+
+                .content{
+                    display: flex;
+                  
+                    
+                }  
+
+                hr{
+
+                  border-style: none;
+                  border-top-style:dotted;
+                  border-color: black;
+                  border-width: 5px;
+                  width: 15%;
+                  margin: auto 47%;
+                  }
+
+                .menu1{
+                    display:flex;
+                    list-style-type: none;
+                                     
+                   padding-left: 10px;
+                  
+                   height: 30px;
+                }   
+
+                .menu1 li{
+                    margin-top: 10px;
+                   color:black;
+                    font-size: large;
+                    padding-left:10px;
+                    padding-top:1px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }  
+
+                .menu2{
+                    display:flex;
+                    
+                    list-style-type: none;
+                   
+                    height: 30px;
+                }   
+                
+                .menu2 li{
+                    margin-top: 10px;
+                   color:black;
+                    font-size: large;
+                    padding-left:10px;
+                    padding-top:1px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                } 
+
+                .headline{
+                    padding-top: 5px;
+                    cursor: pointer;
+                } 
+
+                .background-image{
+                    background-image: url("background11.jpg");
+                    height:777px;
+                   background-position: center;
+                 background-size: cover;
+                } 
+
+                .section-content{
+                    text-align:center;
+                    margin:150px ;
+                    color: white;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    width: 250px;
+                    box-sizing:border-box;
+                    background-color: rgba(0,0,0,0.1);
+                   padding:20px;
+                    
+                }
+
+                .btn{
+                    padding:3%;
+                    border: none; 
+                    border-radius: 5% ; 
+                    cursor: pointer;               
+                }
+
+                button:hover{
+                    background-color:lightblue;
+                }
+
+                .section-content:hover { 
+                  transform: scale(1.1);
+                }
+
+                .menu1 li:hover{
+                   color: rgba(0,0,0,0.1);  
+                   color:rgb(17, 130, 138);
+                   transform: scale(1.2);   
+                   background-color:rgba(33, 100, 105, 0.1) ;
+                    border-radius: 15px;          
+                }
+                .menu2 li:hover{
+                   color: rgba(0,0,0,0.1);  
+                   color:rgb(17, 130, 138); 
+                   transform: scale(1.1);    
+                   background-color:rgba(47, 155, 163, 0.1) ;
+                    border-radius: 15px;        
+                }
+                .headline:hover{
+                    color: rgba(0,0,0,0.1);
+                    color:rgb(108, 193, 199);
+                    transform: scale(1.1);
+                    background-color:rgba(33, 100, 105, 0.1) ;
+                    border-radius: 15px;
+                }
+
+                /* @media(max-width: 500px){
+                    .section-content{
+                        background-color: rgb(133, 191, 214);
+                        width:auto; 
+                    }
+                    .top{
+                        display: flex ;
+                       flex-direction: row; 
+                    }
+                }
+                @media (max-width:500px){
+                    #card_container{
+                        width: 30%;
+                    }
+                } */
+
+
+                /*css for section2 */
+                
+                .section2{
+                    text-align: center;
+                    background-color:rgb(159, 163, 163);
+                    background-color:rgba(0,0,0,0.2);
+                    
+                }
+                .section2_container{
+                    display: flex;
+                }
+               
+                #card_container{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    text-align: center;
+                   width:70%;
+                }
+                .card{
+                   
+                    background-color: white;
+                    color: black;
+                    height:250px;
+                    width:28%;
+                    background-color:rgba(0,0,0,0.1);
+                    border-radius: 10% ;
+                    padding-top: 20px;
+                   margin: 6px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+                .thumbnail1{
+                    background-position: center;
+                    background-size: auto;
+                }
+                .card span{
+                    background-color: rgb(173, 223, 223);
+                }
+
+             
+                /*form css*/
+
+        </style>
+    </head>
+   
+    <body>
+    
+        <div class="background-image">
+            <div class="top">
+                <div class="headline">
+                     <h1>TYP Fellowship</h1><hr style="width: 100px; margin:10px 30px; ">
+                    </div>
+                   <div class="menu1">
+                       <li>About</li>
+                       <li>Project</li>
+                       <li>Contact</li>
+                   </div><div>
+                    <div class="menu2">
+                        <li>Login</li>
+                        <li>SignUp</li>
+                 </div><hr style="width: 100px; margin:10px 30px; ">
+                   </div>
+                    
+                </div>
+                <hr>
+                <div class="content">
+                    <div class="section-content">
+                    
+                        <h1>How To Become a MERN STACK Developer</h1></br><hr></br>
+                        <p> <strong>The Youth Project</strong> (TYP) is a project who will make or shape you a perfect developer. </p>
+                    </br><button class="btn">Know More</button>
+                    </div>
+                    <div class="section-content">
+                        <h1>How To Become a MERN STACK Developer</h1></br><hr></br>
+                        <p> <strong>The Youth Project</strong> (TYP) is a project who will make or shape you a perfect developer. </p>
+                    </br><button class="btn">Know More</button>
+                    </div>
+                    <div class="section-content">
+                        <h1>How To Become a MERN STACK Developer</h1></br><hr></br>
+                        <p> <strong>The Youth Project</strong> (TYP) is a project who will make or shape you a perfect developer. </p>
+                    </br><button class="btn">Know More</button>
+                    </div>
+                </div>
+                
+        </div>
+   
+        <!--cards section html-->
+
+        <div class="section2">
+            
+            <h1>Latest Updates</h1></br>
+            <div class="section2_container">
+                <div id="card_container">
+                    <div class="card">
+                        <div class="thumbnail1" style="background-image: url('naman.jpg');"></div>
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div>
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div>
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div><hr style="border-color: slategray;">
+                   
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div>
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div>
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div> <hr style="border-color:slategray">
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div>
+                    <div class="card">
+                        <h1>HTML CSS Demo</h1>
+                        <p>Every Student at least join own Demo class and learn something new under your Instructor Devansh </p>
+                        <span>Anuj Sir</span>
+                    </div>
+    
+                </div>
+                
+            </div>
+           
+        </div>
+
+    </body>
+</html> 
